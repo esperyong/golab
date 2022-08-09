@@ -138,9 +138,11 @@ func buildIssueCard(m pdf.Maroto, issue *gitlab.Issue) {
 		m.Col(12, func() {
 			text := fmt.Sprintf("故事描述：%s", issue.Description)
 			m.Text(text, props.Text{
-				Size:   12,
-				Family: "NotoSansSC",
-				Align:  consts.Left,
+				Extrapolate: false,
+				Size:        12,
+				Top:         2,
+				Family:      "NotoSansSC",
+				Align:       consts.Left,
 			})
 		})
 	})
