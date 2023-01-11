@@ -24,8 +24,12 @@ golab命令会自动加载文件中的设置到系统的环境变量中.
 
 1. 打印某一个milestone的统计信息
 需要提供group milestone的名称和所在的组ID
+
 ```shell
 $ golab milestone stat -m Sprint-7 -g 5
 ```
 
-
+2. 打印某一个milestone的所有issue内容到pdf中，让我们可以用打印机打印相应的Issues
+```shell
+$ golab milestone printissue -m Sprint-7 -g 5
+```
